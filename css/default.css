@@ -1,0 +1,26 @@
+body {
+  background-color: #B0C4DE;
+  /*
+  #2992DE
+  #218AD5
+  #1F7FC5
+  #1C75B4
+  #1A6AA4
+  #176093
+  #145583
+  #124A73
+  #0F4062
+  */
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5); /* 0.5 to przezroczytaść od 0 do 1*/
+  text-align: center;
+}
+
+.noCopy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

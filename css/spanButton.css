@@ -1,0 +1,69 @@
+span.button {
+  /* Wyłaczenie możliwości kopiowania textu*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 8px;
+  border-radius: 16px;
+
+  transition: rotate(0deg) 10s;
+}
+
+span.button > a{
+  all: unset;
+}
+
+span.button:hover{
+  cursor: pointer;
+  border: 2px solid white;
+
+  animation-name: spanButton;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spanButtonBack {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spanButton {
+  0%   {
+    transform: rotate(0deg);
+    border: 2px solid #fff;
+  }
+
+  20% {
+    transform: rotate(-4deg);
+  }
+
+  40% {
+    transform: rotate(4deg);
+      border: 2px solid #eee;
+  }
+
+  60% {
+    transform: rotate(-4deg);
+      border: 2px solid #eee;
+  }
+
+  80% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    border: 2px solid #fff;
+  }
+}
